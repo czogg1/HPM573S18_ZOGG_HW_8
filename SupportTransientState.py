@@ -6,7 +6,7 @@ import Parameters as P
 
 def print_outcomes(sim_output, strategy_name):
     """ prints the outcomes of a simulated set of games under transient state
-    :param multi_games: output of a simulated set of games
+    :param sim_output: output of a simulated set of games
     :param strategy_name: the name of the heads probability
     """
 

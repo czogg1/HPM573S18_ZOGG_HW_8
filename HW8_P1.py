@@ -40,7 +40,7 @@ test1 = trial1.simulation()
 
 print("")
 print("Checking against the output from HW6 code:")
-print("  The expected game reward given P(head)=0.50:", test1.get_ave_reward())
+print("  The expected game reward when the coin is fair, P(head)=0.50:", test1.get_ave_reward())
 print("  The 95%CI of the expected reward:", test1.get_CI_reward(0.05))
 
 # Create histogram of winnings
@@ -55,7 +55,7 @@ figureLibrary.graph_histogram(
 trial2 = Cls.SetOfGames(prob_head=0.45, n_games=1000, id=2)
 test2 = trial2.simulation()
 
-print("  The expected game reward given P(head)=0.45:", test2.get_ave_reward())
+print("  The expected game reward when the coin is unfair, P(head)=0.45:", test2.get_ave_reward())
 print("  The 95%CI of the expected reward:", test2.get_CI_reward(0.05))
 
 # Create histogram of winnings

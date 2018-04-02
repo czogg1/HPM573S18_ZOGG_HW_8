@@ -44,10 +44,10 @@ multipleGameSets.simulation()
 print("")
 print("Checking against the output from HW6 code:")
 # print projected mean reward
-print('   Predicted mean game reward',
+print('   Predicted mean game reward when the coin is fair, P(head)=0.50:',
       multipleGameSets.get_mean_total_reward())
 # print projection interval
-print('   95% prediction interval of the average game reward',
+print('   95% prediction interval of the average game reward:',
       multipleGameSets.get_PI_total_reward(0.05))
 
 # plot
@@ -64,10 +64,10 @@ multipleGameSets=Cls.MultipleGameSets(ids=range(1000, 2000), prob_head=0.45, n_g
 multipleGameSets.simulation()
 
 # print projected mean reward
-print('   Predicted mean game reward',
+print('   Predicted mean game reward when the coin is unfair, P(head)=0.45:',
       multipleGameSets.get_mean_total_reward())
 # print projection interval
-print('   95% prediction interval of the average game reward',
+print('   95% prediction interval of the average game reward:',
       multipleGameSets.get_PI_total_reward(0.05))
 
 # plot
